@@ -153,7 +153,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to CSS</title>
+    <title>Fruits Page</title>
     <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -161,45 +161,48 @@
         body {
             font-family: Arial, sans-serif;
         }
+
+        /* Additional styling for the fruits page */
+        .fruit-text {
+            color: green;
+        }
+
+        .fruit-heading {
+            color: orange;
+            font-size: 24px;
+        }
     </style>
 </head>
 <body>
-    <h1>HELLO</h1>
-    <p>CSS, which stands for Cascading Style Sheets, is a styling language used to control the appearance of HTML elements on a web page.</p>
+    <h1 class="fruit-heading">Welcome to the Fruits Page</h1>
+    <p class="fruit-text">Fruits are delicious and nutritious!</p>
 
-    <h2>CSS Anatomy</h2>
-    <p>The basic syntax of a CSS rule consists of a selector and a declaration block.</p>
-    <pre>
-        <code>
-            selector {
-                property: value;
-            }
-        </code>
-    </pre>
-
-    <h2>CSS Selectors</h2>
-    <p>CSS selectors are used to target HTML elements for styling. Common selectors include:</p>
+    <h2 class="fruit-heading">Common Fruits</h2>
+    <p class="fruit-text">Here are some common fruits:</p>
     <ul>
-        <li>Element Selector: targets all instances of a specific HTML element (e.g., p {}).</li>
-        <li>Class Selector: targets elements with a specific class attribute (e.g., .my-class {}).</li>
-        <li>ID Selector: targets a single element with a specific ID attribute (e.g., #my-id {}).</li>
+        <li class="fruit-text">Apples</li>
+        <li class="fruit-text">Bananas</li>
+        <li class="fruit-text">Oranges</li>
+        <li class="fruit-text">Grapes</li>
     </ul>
 
-    <h2>Classes vs IDs</h2>
-    <p>Classes and IDs are both used to apply styles to HTML elements, but they have key differences:</p>
+    <h2 class="fruit-heading">Benefits of Eating Fruits</h2>
+    <p class="fruit-text">Eating fruits has numerous health benefits:</p>
     <ul>
-        <li>Classes can be used on multiple elements, while IDs should be unique within a page.</li>
-        <li>Classes are denoted by a period (.), while IDs are denoted by a hash (#).</li>
-        <li>IDs have higher specificity than classes, meaning styles applied via IDs will override styles applied via classes.</li>
+        <li class="fruit-text">Provides essential vitamins and minerals</li>
+        <li class="fruit-text">Boosts immunity</li>
+        <li class="fruit-text">Aids in digestion</li>
+        <li class="fruit-text">Promotes overall well-being</li>
     </ul>
 
-    <!-- External CSS Example -->
-    <div class="box">This is styled using an external CSS file.</div>
+    <!-- External CSS Example (optional) -->
+    <div class="box">This is a styled box using an external CSS file.</div>
 
-    <!-- Inline CSS Example -->
-    <div style="background-color: yellow; padding: 10px;">This is styled using inline CSS.</div>
+    <!-- Inline CSS Example (optional) -->
+    <div style="background-color: yellow; padding: 10px;">This is a styled box using inline CSS.</div>
 </body>
 </html>
+
 ------------------------------------------------------------------------------------------------------------------------------------------------
 .box {
     background-color: lightblue;
