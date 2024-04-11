@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Example</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>This is an example of an HTML page.</p>
+            <img src="example.jpg" alt="Example Image">
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web Design</li>
+                <li>Graphic Design</li>
+                <li>SEO</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Example Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+ HTML portfolio for Ajna HS, a 3rd-year Computer Science student studying at New Horizon College:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajna HS - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ajna HS</h1>
+        <p>Computer Science Student | New Horizon College</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am Ajna HS, a 3rd-year Computer Science student at New Horizon College. I am passionate about programming and technology.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>New Horizon College - Bachelor of Computer Science (2019 - Present)</li>
+                <li>High School Name - High School Diploma (2017 - 2019)</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Online Bookstore Website - Developed using HTML, CSS, and JavaScript.</li>
+                <li>Inventory Management System - Developed using Java and MySQL.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: ajnahs@example.com</p>
+            <p>Phone: +1234567890</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ajna HS. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline CSS */
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>HELLO</h1>
+    <p>CSS, which stands for Cascading Style Sheets, is a styling language used to control the appearance of HTML elements on a web page.</p>
+
+    <h2>CSS Anatomy</h2>
+    <p>The basic syntax of a CSS rule consists of a selector and a declaration block.</p>
+    <pre>
+        <code>
+            selector {
+                property: value;
+            }
+        </code>
+    </pre>
+
+    <h2>CSS Selectors</h2>
+    <p>CSS selectors are used to target HTML elements for styling. Common selectors include:</p>
+    <ul>
+        <li>Element Selector: targets all instances of a specific HTML element (e.g., p {}).</li>
+        <li>Class Selector: targets elements with a specific class attribute (e.g., .my-class {}).</li>
+        <li>ID Selector: targets a single element with a specific ID attribute (e.g., #my-id {}).</li>
+    </ul>
+
+    <h2>Classes vs IDs</h2>
+    <p>Classes and IDs are both used to apply styles to HTML elements, but they have key differences:</p>
+    <ul>
+        <li>Classes can be used on multiple elements, while IDs should be unique within a page.</li>
+        <li>Classes are denoted by a period (.), while IDs are denoted by a hash (#).</li>
+        <li>IDs have higher specificity than classes, meaning styles applied via IDs will override styles applied via classes.</li>
+    </ul>
+
+    <!-- External CSS Example -->
+    <div class="box">This is styled using an external CSS file.</div>
+
+    <!-- Inline CSS Example -->
+    <div style="background-color: yellow; padding: 10px;">This is styled using inline CSS.</div>
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------------------------------------------
+.box {
+    background-color: lightblue;
+    padding: 20px;
+    border: 1px solid #333;
+    margin-top: 20px;
+}

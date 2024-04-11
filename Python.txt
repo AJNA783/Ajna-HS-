@@ -1,0 +1,203 @@
+# Example of a simple Python program
+print("Hello, world!")
+
+# Variables
+x = 10
+name = "Alice"
+
+# Receiving Input
+age = input("Enter your age: ")
+print("Your age is:", age)
+
+# If Statements
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is not greater than 5")
+
+# Logical Operators
+if x > 5 and name == "Alice":
+    print("Both conditions are true")
+elif x < 5 or name == "Bob":
+    print("At least one condition is true")
+
+# Functions
+def greet(name):
+    print("Hello,", name)
+
+# Calling the function
+greet("Alice")
+# Lists and List Methods
+numbers = [1, 2, 3, 4, 5]
+numbers.append(6)
+print(numbers)
+# Classes and Constructors
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+# Inheritance
+class Student(Person):
+    def __init__(self, name, age, student_id):
+        super().__init__(name, age)
+        self.student_id = student_id
+# Formatted Strings
+name = "Alice"
+age = 30
+print(f"Hello, my name is {name} and I am {age} years old.")
+
+# String Methods
+message = "Hello, world!"
+print(message.upper())  # Output: HELLO, WORLD!
+print(message.lower())  # Output: hello, world!
+# Arithmetic Operations
+x = 10
+y = 5
+print(x + y)  # Addition
+print(x - y)  # Subtraction
+print(x * y)  # Multiplication
+print(x / y)  # Division
+
+# Operator Precedence
+result = 10 + 5 * 2  # Multiplication is performed first
+print(result)  # Output: 20
+
+# Math Functions
+import math
+print(math.sqrt(16))  # Square root
+print(math.pow(2, 3))  # Exponentiation
+# While Loops
+counter = 0
+while counter < 5:
+    print(counter)
+    counter += 1
+
+# Building a Guessing Game
+secret_number = 7
+guess = None
+while guess != secret_number:
+    guess = int(input("Guess the secret number (between 1 and 10): "))
+print("Congratulations! You guessed the correct number.")
+# For Loops
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+# Nested Loops
+for i in range(3):
+    for j in range(3):
+        print(i, j)
+# Lists
+fruits = ["apple", "banana", "cherry"]
+print(fruits[0])  # Output: apple
+
+# 2D Lists
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(matrix[1][1])  # Output: 5
+
+# List Methods
+numbers = [1, 2, 3, 4, 5]
+numbers.append(6)
+print(numbers)
+# Tuples
+point = (10, 20)
+x, y = point  # Unpacking tuple
+print(f"x = {x}, y = {y}")
+
+# Unpacking Dictionaries
+person = {"name": "Alice", "age": 30}
+name, age = person.values()
+print(f"Name: {name}, Age: {age}")
+def emoji_converter(message):
+    emojis = {
+        ":)": "😊",
+        ":(": "😞"
+    }
+    for key, value in emojis.items():
+        message = message.replace(key, value)
+    return message
+
+message = "Hello, :)"
+print(emoji_converter(message))  # Output: Hello, 😊
+
+# Return Statement
+def square(x):
+    return x * x
+
+result = square(5)
+print(result)  # Output: 25
+
+# Creating a Reusable Function
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))  # Output: Hello, Alice!
+print(greet("Bob"))  # Output: Hello, Bob!
+# Exceptions
+try:
+    age = int(input("Enter your age: "))
+except ValueError:
+    print("Invalid input. Please enter a valid number.")
+
+# Comments
+# This is a single-line comment
+'''
+This is a
+multi-line comment
+'''
+# Classes and Constructors
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        return f"Hello, my name is {self.name} and I am {self.age} years old."
+
+# Inheritance
+class Student(Person):
+    def __init__(self, name, age, student_id):
+        super().__init__(name, age)
+        self.student_id = student_id
+
+    def study(self):
+        return f"{self.name} is studying."
+
+# Creating objects and using classes
+person1 = Person("Alice", 30)
+print(person1.greet())  # Output: Hello, my name is Alice and I am 30 years old.
+
+student1 = Student("Bob", 25, "S123")
+print(student1.greet())  # Output: Hello, my name is Bob and I am 25 years old.
+print(student1.study())  # Output: Bob is studying.
+
+# Modules and Packages
+import math
+print(math.sqrt(16))  # Output: 4.0
+
+# Generating Random Values
+import random
+print(random.randint(1, 10))  # Output: Random integer between 1 and 10
+# Working with Directories
+import os
+
+# Get current working directory
+print(os.getcwd())
+
+# List files and directories in a directory
+print(os.listdir())
+# Installing a package using pip
+# pip install package_name
+
+# Using a package installed from PyPI
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
+if __name__ == '__main__':
+    app.run()

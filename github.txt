@@ -1,0 +1,73 @@
+Command Prompt (Windows):
+Opening Command Prompt:
+
+Press Win + R, type cmd, and hit Enter.
+Or search for "Command Prompt" in the Start menu.
+Navigating Directories:
+
+Use cd command to navigate (cd path/to/directory).
+Use dir to list files and folders in the current directory.
+Creating a New Directory:
+
+Use mkdir command (mkdir my_project).
+Removing a Directory:
+
+Use rmdir /s /q command (rmdir /s /q my_project).
+Copying a Directory:
+
+Use xcopy command (xcopy source_dir destination_dir /s /e).
+Cloning a Git Repository through VS Code:
+Open VS Code.
+Open the Command Palette (Ctrl + Shift + P).
+Type "Git: Clone" and select it.
+Enter the repository URL and choose a local directory for cloning.
+Git Commands:
+Git Add:
+
+git add <file>: Stage a specific file.
+git add .: Stage all changes.
+Git Commit:
+
+git commit -m "Commit message": Commit staged changes with a message.
+Committing Changes:
+
+Stage changes: git add .
+Commit changes: git commit -m "Your message"
+Git Push:
+
+git push origin branch_name: Push changes to a remote repository.
+Example: git push origin main.
+SSH Keys:
+Generate SSH keys:
+
+
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+Add SSH key to SSH-agent:
+
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+Copy the SSH key (cat ~/.ssh/id_rsa.pub) and add it to your Git hosting provider (e.g., GitHub, GitLab).
+
+Git Branching:
+Create a new branch:
+
+
+git checkout -b new_branch_name
+Switch to an existing branch:
+
+git checkout branch_name
+Merge branches:
+
+
+git checkout main
+git merge new_branch_name
+Undoing Changes in Git:
+Undo last commit:
+
+git reset HEAD~1 --soft
+Discard changes in working directory:
+
+git checkout -- <file>
+Forking in Git:
+Go to the repository on GitHub/GitLab.
+Click on the "Fork" button to create a copy of the repository under your account.
